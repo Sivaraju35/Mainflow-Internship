@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCB Merchandise</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+    <header>
+        <h1>Royal Challengers Bangalore Merchandise</h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('merchandise')">Merchandise</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <h2>Welcome to RCB Merchandise Store</h2>
+            <img src="C:\Users\sivar\OneDrive\Desktop\rcbteam.jpg" alt="RCB Team" class="team-photo">
+            <p>Get the latest RCB gear here!</p>
+        </section>
+
+        <section id="merchandise" class="section" style="display: none;">
+            <h2>Merchandise</h2>
+            <div class="item">
+                <img src="C:\Users\sivar\OneDrive\Desktop\rcbjersy.jpg" alt="RCB Jersey">
+                <h3>RCB Jersey</h3>
+                <p>Price: 2000/-</p>
+                <button onclick="addToCart('RCB Jersey')">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="C:\Users\sivar\OneDrive\Desktop\rcbcap.jpg" alt="RCB Cap">
+                <h3>RCB Cap</h3>
+                <p>Price: 500/-</p>
+                <button onclick="addToCart('RCB Cap')">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="C:\Users\sivar\OneDrive\Desktop\rcbband.jpg" alt="RCB Band">
+                <h3>RCB Band</h3>
+                <p>Price: 200/-</p>
+                <button onclick="addToCart('RCB Band')">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="C:\Users\sivar\OneDrive\Desktop\rcbpant.jpg" alt="RCB TrackPant">
+                <h3>RCB Pant</h3>
+                <p>Price: 1500/-</p>
+                <button onclick="addToCart('RCB Pant')">Add to Cart</button>
+            </div>
+            <!-- Add more merchandise items with images here -->
+        </section>
+
+        <section id="contact" class="section" style="display: none;">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="task3.js"></script>
+</body>
+</html>
